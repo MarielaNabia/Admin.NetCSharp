@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Commons\Bases\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Persistences\Contexts\" />
+    <Folder Include="Persistences\Configurations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.23" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RPA.Domain\RPA.Domain.csproj" />
+    <ProjectReference Include="..\RPA.Utilities\RPA.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>
